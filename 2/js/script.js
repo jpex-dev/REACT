@@ -144,7 +144,7 @@ function getBook(id) {
 }
 
 // Desctruturing
-const book = getBook(2);
+const book = getBook(1);
 
 //const title = book.title;
 //const author = book.author;
@@ -155,5 +155,11 @@ console.log(author, title, genres);
 
 //const primarygenre = genres[0];
 //const Secondaygenre = genres[0];
-const [primarygenre, Secondaygenre] = genres;
-console.log(primarygenre, Secondaygenre);
+const [primarygenre, Secondaygenre, ...otherGenres] = genres;
+console.log(primarygenre, Secondaygenre, otherGenres);
+
+const newGenres = [...genres, "epic fantasy"];
+newGenres;
+
+const updatedBook = { ...book, moviePublicatinDate: "2001-12-19", pages: 1210 };
+updatedBook;

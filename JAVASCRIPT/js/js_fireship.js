@@ -115,12 +115,14 @@ try and catch
 to share files between files
 export and import 
 EG :
- */
-import hi from "./script.js";
+ 
+
+
+import hi from "../from_react/script.js";
 
 hi();
 
-/* have the following code in a JS file:
+ have the following code in a JS file:
 need to have the same sintax
 function hi() {
   console.log("sup dude");
@@ -142,7 +144,7 @@ document.querySelector for take some css elemente -> querySelectorAll for all el
 
 
 EG
-*/
+
 
 const btn = document.querySelector(".button");
 
@@ -151,8 +153,78 @@ btn.addEventListener("click", () => {
   document.body.style.backgroundColor = "red";
 });
 
-// in frameworks:
-// UI = f (state) f as a function
-// embed html and css in components
+in frameworks:
+ UI = f (state) f as a function
+ embed html and css in components
 
-// Node.js runtime in server.
+ Node.js runtime in server.
+
+ ---------------------------------------
+
+ concat -> joins strings
+ */
+
+let namee = "John";
+let surname = "whickk";
+
+let fullname = "";
+fullname = fullname.concat(namee, surname);
+
+console.log(fullname);
+
+console.log(namee.startsWith("s"));
+console.log(namee.startsWith("j"));
+
+console.log(namee.endsWith("n"));
+console.log(namee.endsWith("l"));
+
+console.log(namee.includes("hello"));
+console.log(namee.includes("jo"));
+
+//return the first position of the subsstring. If doenst it returns -1
+console.log(namee.indexOf("o"));
+console.log(namee.indexOf("hello"));
+
+console.log(namee.length);
+
+console.log(namee.repeat(2));
+
+console.log(namee.replace("John", "JOHNN"));
+
+//search -> return the index of the first match
+console.log(namee.search("h"));
+
+//split a string in a specified place
+console.log(namee.split(""));
+
+//two arguments , the starting index and the number to slice
+console.log(namee.substr(1, 4));
+
+console.log(namee.toLowerCase());
+console.log(namee.toUpperCase());
+
+//typeof
+
+console.log(typeof namee);
+
+//String to int
+
+let numb = "10";
+let numInt = parseInt(numb);
+//OR Number(numb)
+//OR +num
+// EVERYTIME WANNA CHANGE A VARAIBLE USE PARSE...
+
+//NON-primitive data types like arrays, dict, list ... cannot be compared by values
+
+let numberss = [1, 2, 3];
+let num = [1, 2, 3];
+console.log(num == numberss);
+
+//instead:
+
+let numbersss = [1, 2, 3];
+
+let numm = numbersss;
+
+console.log(numbersss == numm);

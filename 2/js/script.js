@@ -1,3 +1,9 @@
+function hi() {
+  console.log("sup dude");
+}
+
+export default hi;
+
 const data = [
   {
     id: 1,
